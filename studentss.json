@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Leo",
+        "course": "BSIT",
+        "grade": 90
+    },
+    {
+        "name": "Ana",
+        "course": "BSCS",
+        "grade": 95
+    },
+    {
+        "name": "Mark",
+        "course": "BSIT",
+        "grade": 88
+    }
+]
