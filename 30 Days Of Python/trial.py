@@ -36,6 +36,8 @@ for i in range(1, 5):
 print(total)#OUTPUT: 1,2,3,4 total = 10
 """
 
+
+"""
 def add_item(item, items = None):
     if items == None:# if you obviously leave an empty string("") on add_item  when calling the function
         items = []#It will create fresh or brand-new list everytime 
@@ -49,3 +51,7 @@ def add_item(item, items = None):
 
 print(add_item(''))
 print(add_item("b"))
+"""
+
+
+for i in range(1, 100)

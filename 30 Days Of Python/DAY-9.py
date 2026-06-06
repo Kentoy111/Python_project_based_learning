@@ -64,6 +64,8 @@ else:
     print('Invalid month name, Please type the month correctly.')    
 """
 
+
+"""
 #importing this is important so python ccan read and write
 #text files that are formatted using json data.
 import json
@@ -97,4 +99,44 @@ with open('fruits.json', 'w') as file:
     #json.dump simply pour or puts the values into the json file 
     #while fruits is the one who will be written or saved and file is the container of the fruits 
     json.dump(fruits, file, indent=4)
-        
+"""
+
+"""
+#proper way of making a dictionary in python
+person = {
+    'first_name': 'Kent',
+    'last_name': 'Barneso',
+    'age':20,
+    'country':'China',
+    'is_married': False,
+    'skills':['Javascript',  'HTML'],
+    'address':{
+        'street':'Ira',
+        'zipcode':'8600'
+    }
+}
+
+#accessing the skills key in person dictionary
+if 'skills' in person:
+    #accessing the skills value and its index(kung aha siya dapit na index)
+    print(person['skills'][1])
+#checks if the test value exists in the list of values in list 'skills'.
+if 'Python' in person['skills']:
+    print('this person has a Python skills')
+else:
+    print('this person doesnt have python skill')      
+
+#checks if both values in the list "skills" exists 
+if 'Javascript' and 'Python' in person['skills']:
+    print('This person is a backend developer.')
+else:
+    print('This person is lazy as fuck.')    
+
+#checks if the specific mentioned keys in the person dictionary exist.
+if person['country'] == 'Philippines' and person['is_married'] == False:
+    print(f'{person['first_name']} {person["last_name"]} lives in {person["country"]}. He is not married')
+else:
+    print(f'{person['first_name']} {person["last_name"]} lives in {person["country"]}. He is not married')
+
+#print(f'{person['first_name']} {person["last_name"]} lives in {person["country"]}. He is not married')  
+"""
